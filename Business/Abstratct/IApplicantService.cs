@@ -1,0 +1,19 @@
+﻿using Entities.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Business.Abstratct
+{
+    public interface IApplicantService
+    {
+        void ApplyForMask(Citizen citizen);
+
+        List<Citizen> GetList();
+
+        bool CheckCitizen(Citizen citizen);
+
+    }
+}
